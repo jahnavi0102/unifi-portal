@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="max-w-md mx-auto bg-white p-6 rounded shadow">
+  <h1 class="text-2xl font-bold mb-4">Wi-Fi Login</h1>
+  <form method="POST" action="{{ url_for('routes.authenticate') }}">
+    <!-- User email -->
+    <input type="email" name="email" placeholder="Enter your email"
+           class="border px-3 py-2 w-full mb-3 rounded" required>
+
+    <!-- Hidden fields for simulating UniFi parameters -->
+    <input type="hidden" name="mac" value="AA:BB:CC:DD:EE:FF">
+    <input type="hidden" name="ip" value="192.168.1.100">
+    <input type="hidden" name="ap_mac" value="11:22:33:44:55:66">
+    <input type="hidden" name="ssid" value="GuestWiFi">
+
+    <button type="submit"
+            class="bg-blue-600 text-white px-4 py-2 w-full rounded hover:bg-blue-700">
+      Connect
+    </button>
+  </form>
+</div>
+{% endblock %}

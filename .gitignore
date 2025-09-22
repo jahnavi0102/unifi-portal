@@ -1,0 +1,6 @@
+env/
+.env
+node_modules/
+unifi/
+__pycache__/
+app/__pycache__/
