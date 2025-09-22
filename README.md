@@ -17,6 +17,8 @@ This project implements an external captive portal for UniFi Wi-Fi using Flask, 
 ## Getting Started
 
 Create an .ENV file in the root directory and fill in these values 
+
+
             # Unifi Portal
             UNIFI_BASE_URL=
             UNIFI_USERNAME=
