@@ -16,6 +16,23 @@ This project implements an external captive portal for UniFi Wi-Fi using Flask, 
 
 ## Getting Started
 
+Create an .ENV file in the root directory and fill in these values 
+            UNIFI_BASE_URL=
+            UNIFI_USERNAME=
+            UNIFI_PASSWORD=
+            UNIFI_SITE=default
+
+            # Flask App
+            SECRET_KEY=devkey
+            SQLALCHEMY_DATABASE_URI=mysql+pymysql://newuser:password@db/unifi_portal
+            SQLALCHEMY_TRACK_MODIFICATIONS=False
+
+            # MySQL
+            MYSQL_ROOT_PASSWORD=rootpassword
+            MYSQL_DATABASE=unifi_portal
+            MYSQL_USER=newuser
+            MYSQL_PASSWORD=password
+
 Simply run:
 
 ```bash
